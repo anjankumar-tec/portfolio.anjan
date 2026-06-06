@@ -59,9 +59,9 @@
   <!-- ==========================================================================
        Hero Section
        ========================================================================== -->
-  <section class="hero" id="home">
+  <section class="hero" id="home" data-aos="fade-up">
     <div class="container hero-grid">
-      <div class="hero-content">
+      <div class="hero-content" data-aos="fade-right">
         <div class="hero-subtitle">Welcome to my space</div>
         <h1 class="hero-title">
           Hi, I am <span>Anjan</span><br>
@@ -80,8 +80,8 @@
           <a href="#contact" class="btn btn-secondary">Let's Connect</a>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="avatar-wrapper">
+      <div class="hero-visual"data-aos="zoom-in">
+        <div class="avatar-wrapper" data-aos="flip-left">
           <img src="assets/avatar.png" alt="Anjan Profile Avatar" class="avatar-img">
         </div>
       </div>
@@ -97,7 +97,7 @@
   <!-- ==========================================================================
        About Section
        ========================================================================== -->
-  <section class="section" id="about">
+  <section class="section" id="about" data-aos="fade-up">
     <div class="container">
       <h2 class="section-title reveal">About Me</h2>
       <div class="about-grid">
@@ -482,5 +482,13 @@
   </div>
 
   <script src="app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
+</script>
 </body>
 </html>
