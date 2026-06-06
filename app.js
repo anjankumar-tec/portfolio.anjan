@@ -209,7 +209,12 @@ window.addEventListener('resize', initParticles);
    ========================================================================== */
 
 const typewriterText = document.getElementById('typewriter-text');
-const roles = ["Full-Stack Engineer", "UI/UX Developer", "Design Technologist", "Creative Architect"];
+const roles = [
+    "Electronics Engineer",
+    "IoT Developer",
+    "Embedded Systems Engineer",
+    "Web Developer"
+];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
