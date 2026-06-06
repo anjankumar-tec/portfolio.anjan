@@ -209,7 +209,7 @@ window.addEventListener('resize', initParticles);
    ========================================================================== */
 
 const typewriterText = document.getElementById('typewriter-text');
-    const words = [
+   const words = [
     "ECE Student",
     "AI & IoT Developer",
     "Prompt Engineer",
