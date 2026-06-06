@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anjan | Premium Portfolio & Interactive Showcase</title>
+  <meta name="description" content="Welcome to my professional interactive portfolio. Explore my projects, skills, timeline, and connect with me.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="use-custom-cursor">
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+
+  <!-- Background Particle Canvas -->
+  <canvas id="canvas-bg"></canvas>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        ANJAN <span class="logo-dot"></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#timeline" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+          <!-- Sun Icon -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <!-- Moon Icon -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-subtitle">Welcome to my space</div>
+        <h1 class="hero-title">
+          Hi, I am <span>Anjan</span><br>
+          <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+        </h1>
+        <p class="hero-desc">
+          Crafting premium, state-of-the-art web applications and digital interfaces. Focused on visual excellence, performance, and user-centric interactivity.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <img src="assets/avatar.png" alt="Anjan Profile Avatar" class="avatar-img">
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down to About section">
+      <span>Scroll Down</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M19 12l-7 7-7-7"></path>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ==========================================================================
+       About Section
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-details reveal-left">
+          <p>
+            I am a passionate developer and designer with a deep curiosity for building elegant digital solutions. Combining solid engineering logic with refined visual aesthetics, I create products that feel responsive, look premium, and perform exceptionally.
+          </p>
+          <p>
+            With expertise across front-end systems, styling architectures, and interactive design, I translate ideas into fluid, cross-platform codebases. I believe that web experiences should be fast, accessible, and delightful to interact with.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-card glass-card">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-num">40+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-num">99%</div>
+              <div class="stat-label">Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-skills-intro glass-card reveal-right" style="padding: 2.5rem;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1.5rem;">My Core Philosophy</h3>
+          <ul style="display: flex; flex-direction: column; gap: 1.25rem;">
+            <li style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="color: var(--accent-2); margin-top: 0.2rem; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+              </div>
+              <div>
+                <strong style="display: block; margin-bottom: 0.2rem; font-family: var(--font-heading);">User-Centered Excellence</strong>
+                <span style="color: var(--text-muted); font-size: 0.9rem;">Placing user needs and micro-interactions at the heart of the design and architectural phase.</span>
+              </div>
+            </li>
+            <li style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="color: var(--accent-2); margin-top: 0.2rem; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+              </div>
+              <div>
+                <strong style="display: block; margin-bottom: 0.2rem; font-family: var(--font-heading);">Clean & Performance-Optimized</strong>
+                <span style="color: var(--text-muted); font-size: 0.9rem;">Writing semantic, lean code that compiles easily, loads instantly, and runs smoothly at 60 FPS.</span>
+              </div>
+            </li>
+            <li style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="color: var(--accent-2); margin-top: 0.2rem; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+              </div>
+              <div>
+                <strong style="display: block; margin-bottom: 0.2rem; font-family: var(--font-heading);">Interactive Design Aesthetics</strong>
+                <span style="color: var(--text-muted); font-size: 0.9rem;">Blending glassmorphic layers, gradients, custom styling variables, and Canvas particles for immersive UI.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Skills Section
+       ========================================================================== -->
+  <section class="section" id="skills" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <h2 class="section-title reveal">Technical Skills</h2>
+      
+      <div class="skills-search-wrapper reveal">
+        <div class="form-group">
+          <input type="text" id="skills-search" class="form-input" placeholder=" " autocomplete="off">
+          <label for="skills-search" class="form-label">Search skills (e.g. JS, React...)</label>
+        </div>
+      </div>
+
+      <div class="skills-tabs reveal">
+        <button class="skills-tab-btn active" data-filter="all">All Tech</button>
+        <button class="skills-tab-btn" data-filter="frontend">Frontend</button>
+        <button class="skills-tab-btn" data-filter="backend">Backend</button>
+        <button class="skills-tab-btn" data-filter="design">Design & Tools</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- SVG Gradient for rings -->
+        <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+          <linearGradient id="skillGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="var(--accent-1)" />
+            <stop offset="100%" stop-color="var(--accent-2)" />
+          </linearGradient>
+        </svg>
+
+        <!-- Skill Cards will be dynamically rendered via JS for flexibility, filtration, and performance. -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Projects Section
+       ========================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">Creative UI</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project Cards will be dynamically rendered via JS to facilitate simple management, details modal integration, and filter logic. -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Experience & Education Timeline Section
+       ========================================================================== -->
+  <section class="section" id="timeline" style="background: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <h2 class="section-title reveal">Professional Timeline</h2>
+
+      <div class="timeline-container">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-date">2024 - Present</div>
+            <h3 class="timeline-role">Senior Full-Stack Engineer</h3>
+            <div class="timeline-company">TechSolutions Global</div>
+            <p class="timeline-desc">Leading frontend UI revitalization and dashboard construction. Spearheaded application optimization projects reducing load times by 40% using modern web best-practices and performance profiling.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-date">2022 - 2024</div>
+            <h3 class="timeline-role">UI/UX Developer</h3>
+            <div class="timeline-company">Aesthetic Web Labs</div>
+            <p class="timeline-desc">Engineered interactive client interfaces using core JS, CSS architectures, and React framework. Designed pixel-perfect micro-interactions and glassmorphic layouts featured in agency publications.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-date">2020 - 2022</div>
+            <h3 class="timeline-role">Software Engineer</h3>
+            <div class="timeline-company">ByteCore Systems</div>
+            <p class="timeline-desc">Focused on backend integrations, robust REST APIs, databases schemas, and cloud deployment pipelines. Programmed secure authentication systems and message delivery components.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-date">2016 - 2020</div>
+            <h3 class="timeline-role">B.S. in Computer Science</h3>
+            <div class="timeline-company">Apex University</div>
+            <p class="timeline-desc">Acquired strong foundational knowledge in data structures, design patterns, algorithm optimization, software engineering practices, and database management systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Section
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <div class="contact-grid">
+        
+        <div class="contact-info reveal-left">
+          <h3 class="contact-info-title">Let's discuss your next project</h3>
+          <p class="contact-info-desc">
+            Have an exciting idea, an open vacancy, or just want to discuss technical architectures? Drop me a line, and let's build something exceptional together!
+          </p>
+
+          <div class="contact-method-list">
+            <div class="contact-method-card glass-card">
+              <div class="contact-method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-label">Email Me</div>
+                <a href="mailto:anjan@example.com" class="contact-method-value">anjan@example.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method-card glass-card">
+              <div class="contact-method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-label">Call Me</div>
+                <a href="tel:+1234567890" class="contact-method-value">+1 (234) 567-890</a>
+              </div>
+            </div>
+
+            <div class="contact-method-card glass-card">
+              <div class="contact-method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-label">Location</div>
+                <div class="contact-method-value">San Francisco, CA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card glass-card reveal-right">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <input type="text" id="contact-name" class="form-input" placeholder=" " required minlength="2">
+              <label for="contact-name" class="form-label">Full Name</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="contact-email" class="form-input" placeholder=" " required>
+              <label for="contact-email" class="form-label">Email Address</label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="contact-subject" class="form-input" placeholder=" " required minlength="3">
+              <label for="contact-subject" class="form-label">Subject</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="contact-message" class="form-input" placeholder=" " required minlength="10" style="min-height: 150px; resize: vertical;"></textarea>
+              <label for="contact-message" class="form-label">Message Details</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="logo footer-logo">ANJAN<span class="logo-dot"></span></div>
+          <p class="footer-desc">
+            An elegant, fully client-side portfolio displaying high-fidelity engineering logic and design.
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub Profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn Profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect width="4" height="12" x="2" y="9"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter Profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Anjan. All rights reserved. Created with Antigravity AI.</div>
+        <div>
+          <!-- Secret Inbox Trigger -->
+          <button class="dashboard-trigger" id="open-inbox-btn">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            Client Inbox Access
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL: Project Detail View
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-container glass-card" id="project-modal-container">
+      <button class="modal-close-btn" id="project-modal-close" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div id="project-modal-content">
+        <!-- Will be filled dynamically by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: Client Inbox Dashboard (Local Message Dashboard)
+       ========================================================================== -->
+  <div class="modal-overlay" id="inbox-modal" role="dialog" aria-modal="true">
+    <div class="modal-container glass-card" style="max-width: 800px;">
+      <button class="modal-close-btn" id="inbox-modal-close" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div id="inbox-auth-section">
+        <h3 class="section-title" style="font-size: 1.75rem; margin-bottom: 1rem;">Client Inbox Verification</h3>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Please verify access to view contact form submissions cached in this browser.</p>
+        
+        <div class="auth-shield">
+          <div class="form-group">
+            <input type="password" id="inbox-password-input" class="form-input" placeholder=" " required>
+            <label for="inbox-password-input" class="form-label">Admin Pin (Default: 1234)</label>
+          </div>
+          <button class="btn btn-primary" id="inbox-auth-submit" style="justify-content: center;">Verify Credentials</button>
+          <div id="inbox-auth-error" style="color: rgb(239, 68, 68); font-size: 0.85rem; font-weight: 600; display: none;">Invalid Admin Pin. Try again!</div>
+        </div>
+      </div>
+
+      <div id="inbox-dashboard-section" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem;">
+              Client Inbox Dashboard
+            </h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Stored locally in localStorage. Securely view client form requests.</p>
+          </div>
+          <div style="display: flex; gap: 0.75rem;">
+            <button class="btn btn-secondary" id="inbox-export-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Export JSON
+            </button>
+            <button class="btn btn-secondary" id="inbox-lock-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              Lock Inbox
+            </button>
+          </div>
+        </div>
+
+        <div id="inbox-messages-container">
+          <!-- Dynamically populated from JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
