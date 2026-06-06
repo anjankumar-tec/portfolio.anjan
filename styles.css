@@ -644,7 +644,7 @@ ul {
 
 @media (max-width: 992px) {
   .hero-grid {
-    grid-template-columns: 1fr;
+     display:grid;
     text-align: center;
     padding-top: 4rem;
   }
@@ -655,7 +655,7 @@ ul {
     justify-content: center;
   }
   .hero-visual {
-    order: -1;
+    order: 0;
   }
   .avatar-wrapper {
     width: 220px;
