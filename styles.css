@@ -575,6 +575,7 @@ ul {
   height: 300px;
   border-radius: var(--radius-round);
   padding: 8px;
+   margin-top:auto;
   background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
   box-shadow: 0 20px 40px rgba(var(--accent-1-rgb), 0.25);
   animation: float 6s ease-in-out infinite;
