@@ -664,11 +664,13 @@ ul {
     justify-content: center;
   }
   .hero-visual {
-    order: 0;
+    justify-self: end;
+    align-self: center;
+    margin-top: -120px;
   }
   .avatar-wrapper {
-    width: 220px;
-    height: 220px;
+    width: 320px;
+    height: 320px;
   }
 }
 
