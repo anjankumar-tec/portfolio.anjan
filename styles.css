@@ -518,7 +518,7 @@ ul {
 .hero-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  align-items: start;
+  align-items: center;
   gap: 3rem;
 }
 
