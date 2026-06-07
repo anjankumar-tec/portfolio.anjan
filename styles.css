@@ -528,6 +528,7 @@ ul {
 .hero-visual {
     grid-column: 2;
     justify-self: end;
+   align-self: center;
 }
 
 .hero-subtitle {
@@ -651,7 +652,7 @@ ul {
   60% { transform: translateY(-4px); }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .hero-grid {
      display:grid;
     text-align: center;
