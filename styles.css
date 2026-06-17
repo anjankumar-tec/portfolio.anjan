@@ -518,7 +518,7 @@ ul {
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: start;
   gap: 3rem;
 }
 .hero-content {
@@ -528,7 +528,8 @@ ul {
 .hero-visual {
     grid-column: 2;
     justify-self: end;
-   align-self: center;
+   align-self: start;
+   margin-top:-50px;
 }
 
 .hero-subtitle {
