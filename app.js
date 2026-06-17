@@ -3,18 +3,22 @@
    ========================================================================== */
 
 const skills = [
-  { name: "React / React Native", category: "frontend", level: 90 },
-  { name: "TypeScript", category: "frontend", level: 85 },
-  { name: "Next.js", category: "frontend", level: 80 },
-  { name: "HTML5 & Vanilla CSS", category: "frontend", level: 95 },
-  { name: "JavaScript (ES6+)", category: "frontend", level: 92 },
-  { name: "Node.js & Express", category: "backend", level: 85 },
-  { name: "PostgreSQL & SQL", category: "backend", level: 80 },
-  { name: "MongoDB & Mongoose", category: "backend", level: 78 },
-  { name: "Python / Django / Flask", category: "backend", level: 75 },
-  { name: "Figma (UI/UX Design)", category: "design", level: 88 },
-  { name: "Git & Version Control", category: "design", level: 90 },
-  { name: "Docker & CI/CD Pipelines", category: "design", level: 70 }
+  { name: "C Programming", category: "frontend", level: 85 },
+  { name: "Java", category: "frontend", level: 80 },
+  { name: "Python", category: "frontend", level: 75 },
+  { name: "HTML5", category: "frontend", level: 90 },
+  { name: "CSS3", category: "frontend", level: 85 },
+  { name: "JavaScript", category: "frontend", level: 80 },
+
+  { name: "Embedded Systems", category: "backend", level: 75 },
+  { name: "Arduino", category: "backend", level: 80 },
+  { name: "ESP8266", category: "backend", level: 75 },
+  { name: "IoT Development", category: "backend", level: 80 },
+
+  { name: "Git & GitHub", category: "design", level: 85 },
+  { name: "VS Code", category: "design", level: 90 },
+  { name: "Prompt Engineering", category: "design", level: 85 },
+  { name: "Canva", category: "design", level: 80 }
 ];
 
 const projects = [
