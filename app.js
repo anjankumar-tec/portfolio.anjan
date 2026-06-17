@@ -19,47 +19,39 @@ const skills = [
 
 const projects = [
   {
-    id: "project-1",
-    name: "AI-Powered Analytics Dashboard",
-    category: "web",
-    tags: ["React", "Next.js", "Python", "D3.js"],
-    desc: "A premium business intelligence dashboard featuring real-time data streaming, forecasting models, and glassmorphic UI elements.",
-    detailedDesc: "This project is a high-performance metrics dashboard integrated with predictive machine learning algorithms. Built to display complex datasets cleanly, it incorporates WebSockets for real-time visualization, responsive SVG charting libraries, and high-fidelity custom layout animations.",
-    image: "assets/project-dashboard.png",
-    client: "Intellect Corp",
-    role: "Lead UI Developer",
-    duration: "6 Months",
-    liveLink: "https://example.com/analytics",
-    repoLink: "https://github.com/example/analytics"
+     name: "AI Resume Builder",
+category: "web",
+tags: ["HTML", "CSS", "JavaScript", "Java"],
+desc: "Create professional resumes and download them instantly.",
+image: "assets/resume-builder.png",
+liveLink: "https://your-resume-builder-link",
+repoLink: "https://github.com/anjankumar-tec/resume-builder"
+ 
   },
   {
-    id: "project-2",
-    name: "FinTech Mobile Banking Application",
-    category: "mobile",
-    tags: ["React Native", "TypeScript", "Node.js", "Express"],
-    desc: "A secure and sleek banking app featuring seamless account transfers, biometrics, and dynamic spend forecasting diagrams.",
-    detailedDesc: "Designed with modern typography and strict security standards, this application bridges banking capabilities with smart analytics. It utilizes native iOS and Android components, custom styling variables, state management systems, and biometrics validation.",
-    image: "assets/project-mobile.png",
-    client: "Apex Wealth",
-    role: "Mobile App Engineer",
-    duration: "4 Months",
-    liveLink: "https://example.com/banking",
-    repoLink: "https://github.com/example/banking"
+     name: "Personal Portfolio Website",
+category: "web",
+tags: ["HTML", "CSS", "JavaScript"],
+desc: "Responsive portfolio website showcasing skills and projects.",
+image: "assets/portfolio.png",
+liveLink: "https://portfolio-anjan.vercel.app",
+repoLink: "https://github.com/anjankumar-tec/portfolio.anjan"
+    
   },
-  {
+ {
     id: "project-3",
-    name: "Minimalist E-Commerce Platform",
+    name: "IoT Home Automation System",
     category: "web",
-    tags: ["HTML5", "Vanilla JS", "Node.js", "PostgreSQL"],
-    desc: "A high-conversion creative e-commerce experience displaying rich product catalog flows and customized animations.",
-    detailedDesc: "A complete client-side optimized e-commerce landing page built to load in under 500ms. It features customizable themes, filtering algorithms, client cart session caches, and responsive checkout fields.",
-    image: "assets/project-landing.png",
-    client: "Minimal Studio",
-    role: "Full-Stack Developer",
+    tags: ["IoT", "Arduino", "ESP8266", "Embedded C"],
+    desc: "Smart home automation system for controlling appliances remotely.",
+    detailedDesc: "Developed an IoT-based home automation system using ESP8266 and Arduino. The system allows users to control lights, fans, and other appliances remotely through a mobile application or web interface.",
+    image: "assets/home-automation.png",
+    client: "Academic Project",
+    role: "IoT Developer",
     duration: "3 Months",
-    liveLink: "https://example.com/shop",
-    repoLink: "https://github.com/example/shop"
-  }
+    liveLink: "#",
+    repoLink: "#"
+}
 ];
 
 /* ==========================================================================
